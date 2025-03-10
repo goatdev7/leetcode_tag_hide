@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Toggle Difficulty Tag",
+    "version": "1.1",
+    "description": "Toggle hiding the difficulty tag line from problems.",
+    "action": {
+        "default_title": "Toggle Difficulty Tag"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ]
+}
