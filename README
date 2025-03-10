@@ -1,16 +1,16 @@
-## Toggle Difficulty Tag
+# Toggle Difficulty Tag
 I built this toggle tool that hides a problem’s difficulty during solving, so I can approach it without bias and reveal its true challenge only after completing it. It is a simple Chrome extension that hides the difficulty tag on problem pages and lets you toggle it on or off by clicking the extension icon.
 
-### How It Works
+## How It Works
 - The extension uses a content script with a MutationObserver to watch for elements matching certain classes and hides them.
 - When you click the extension icon, it toggles between hiding and showing these elements.
 
-### Installation
+## Installation
 
 - Clone or download this repo.
 - Open Chrome and navigate to chrome://extensions/.
 - Enable Developer Mode.
 - Click "Load unpacked" and select this extension’s folder.
 
-### Notes
+## Notes
 The extension only works on pages where content scripts are allowed.
